@@ -1,0 +1,43 @@
+services:
+  careflow-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: careflow-api
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+    env_file:
+      - .env
+    depends_on:
+      careflow-db:
+        condition: service_healthy
+    networks:
+      - careflow-net
+
+  careflow-db:
+    image: postgres:15
+    container_name: careflow-db
+    restart: unless-stopped
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: careflow
+      POSTGRES_USER: careflow_user
+      POSTGRES_PASSWORD: careflow_pass
+    volumes:
+      - careflow-db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U careflow_user -d careflow"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - careflow-net
+
+volumes:
+  careflow-db-data:
+
+networks:
+  careflow-net:
+    driver: bridge
