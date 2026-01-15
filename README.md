@@ -45,7 +45,7 @@ CareFlow est une application backend développée en Java avec Spring Boot qui f
 
 1. **Cloner le projet**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Madior74/CareFlow.git
    cd CareFlow
    ```
 
