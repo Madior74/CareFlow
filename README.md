@@ -65,7 +65,7 @@ CareFlow est une application backend développée en Java avec Spring Boot qui f
 |------|-------|--------------|-------------|
 | Admin | `admin@clinic.local` | `admin123` | Accès complet |
 | Médecin | `doctor@clinic.local` | `doctor123` | Gestion patients |
-| Personnel | `staff@clinic.local` | `staff123` | Gestion administrative |
+| Staff | `staff@clinic.local` | `staff123` | Gestion administrative |
 
 ## 📖 Documentation
 
