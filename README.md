@@ -71,20 +71,14 @@ CareFlow est une application backend développée en Java avec Spring Boot qui f
 
 ### Pour les développeurs backend
 
-Consultez la [documentation technique complète](./API_DOCUMENTATION_FRONTEND.md) pour :
+Consultez la [documentation technique complète](./API_DOCUMENTATION_TECHNIQUE.md) pour :
 - Architecture du projet
 - Endpoints API détaillés
 - Modèles de données
 - Gestion des erreurs
 - Bonnes pratiques
 
-### Pour l'équipe frontend
 
-Suivez le [guide Docker Frontend](./DOCKER_README_FRONTEND.md) pour :
-- Lancer l'API rapidement
-- Explorer Swagger UI
-- Tester les endpoints
-- Intégrer l'API dans votre application
 
 ## 🏗️ Architecture
 
