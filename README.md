@@ -176,13 +176,7 @@ docker build -t careflow:latest .
 docker-compose -f docker-compose.prod.yml up -d
 ```
 
-### Variables de production
 
-```env
-SPRING_PROFILES_ACTIVE=prod
-SPRING_JPA_HIBERNATE_DDL_AUTO=validate
-JWT_SECRET=secret-production-fort
-```
 
 ## 🤝 Contribution
 
@@ -199,16 +193,6 @@ JWT_SECRET=secret-production-fort
 - Documentation des endpoints avec OpenAPI
 - Validation des DTOs
 - Gestion d'erreurs centralisée
-
-## 📝 Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
-
-## 📞 Support
-
-- **Documentation technique**: [API_DOCUMENTATION_TECHNIQUE.md](./API_DOCUMENTATION_TECHNIQUE.md)
-
-
 
 
 
